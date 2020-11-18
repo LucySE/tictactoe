@@ -1,7 +1,7 @@
  let currentPlayer = "X"; // initialising to X means X plays first move
 
 
- console.log("Please wait your turn");
+
 
 
 
@@ -14,6 +14,11 @@ $(document).ready(function(){
     //this code runs only when a click happens.
     // console.log("choose box");
     // Is the box empty?if
+    // Opening box aanounces game and should disappear when clicked.
+    $('.h-button').on('click', () => {
+    $('.h-button').hide();  
+  });
+
     if( $(this).html() !== "" ){
       // If clicked square is occupied, return early from this click handler.
       // This has the effect of preventing the move from being played.
