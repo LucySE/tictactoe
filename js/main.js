@@ -1,11 +1,6 @@
-
- let currentPlayer = "X"; // initialising to X means X plays first move
-
-
-
-
-
-
+  let board = ['','','','','','','','',''];
+  let currentPlayer = "X"; // initialising to X means X plays first move
+  let moveCount = 0;
 
 $(document).ready(function(){
 
@@ -28,6 +23,9 @@ $(document).ready(function(){
       // i.e. ignore illegal moves in occupied squares.
       return;
     }
+
+
+    moveCount++;
 
     if( currentPlayer === "X" ){
       // what should you do if it is X?
@@ -89,8 +87,12 @@ $(document).ready(function(){
       console.log("O wins on diagonal row!");
     }
     else if ($("#1").html() === "O" && $("#5").html() === "O" && $("#9").html() ==="O"){
-      
+      $("#winButton").html("Winner")
+    } else if (moveCount===9){
+      console.log("It's a draw");
+      //this code runs if no other "winning conditions" are found.
     }
+     //end of click handler for grid item squares
   });   //end of click handler for grid item squares
 
-});    //end of document ready
+ });    //end of document ready
