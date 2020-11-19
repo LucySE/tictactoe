@@ -1,3 +1,4 @@
+
  let currentPlayer = "X"; // initialising to X means X plays first move
 
 
@@ -8,16 +9,18 @@
 
 $(document).ready(function(){
 
+  $("#playbutton").on('click',function(){
+    $(this).hide();
+  });   //This is the end of the playbutton handler
+
 
   // console.log("Hello world dom is ready");
   $(".grid-item").on('click',function() {
     //this code runs only when a click happens.
     // console.log("choose box");
     // Is the box empty?if
-    // Opening box aanounces game and should disappear when clicked.
-    $('.h-button').on('click', () => {
-    $('.h-button').hide();  
-  });
+
+  // });
 
     if( $(this).html() !== "" ){
       // If clicked square is occupied, return early from this click handler.
@@ -86,7 +89,7 @@ $(document).ready(function(){
       console.log("O wins on diagonal row!");
     }
     else if ($("#1").html() === "O" && $("#5").html() === "O" && $("#9").html() ==="O"){
-      alert("O wins on diagonal row!");
+      
     }
   });   //end of click handler for grid item squares
 
