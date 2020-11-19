@@ -4,7 +4,7 @@ Project 0 was to create a working game of tic-tac-toe
 
 ## Link (to the live site)
 
-Add a link to your demo here
+https://lucyse.github.io/tictactoe/
 
 ## How it was built (Or you can call this Technologies Used)
 
@@ -12,13 +12,7 @@ I used HTML, CSS, JavaScript and jQuery to build this game.
 
 ## How to play / Features
 
-(Don't explain how to play tic-tac-toe, most people know. Explain or list out some features you've added. An example below)
-
-You have been assigned the character 'Socks' and will take turns playing against the CPU - 'Boots'.
-
-The game will track the number of games both you and the CPU has won. To reset the board and play again simply click the 'Reset' button (don't worry this won't clear the score count).
-
-(YOU COULD ADD A SCREENSHOT HERE)
+We begin with player X and then O, however, in later releases, players will be able to upload there own pictures.
 
 ## Known Bugs
 
@@ -30,6 +24,6 @@ OR YOU CAN LIST IT OUT
 
 ## Future feature / Wishlist
 
-- Networked multiplayer
+- In future releases the game will evolve into a magic 8 ball feature.  
 
 ## My experience developing the game (Optional)
